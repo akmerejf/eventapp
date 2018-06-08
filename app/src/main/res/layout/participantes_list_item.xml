@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="2"
+    android:layout_width="150dp"
+    android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/participantes_list_item_nome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:background="#d3d3d3"/>
+
+        <TextView
+            android:id="@+id/participantes_list_item_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:background="#d3d3d3"/>
+
+</LinearLayout>

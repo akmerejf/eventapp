@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/participante_detalhes_fragment_container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/participante_detalhes_fragment_fechar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="16dp"
+
+        android:src="@drawable/ic_close_white_24dp"
+        android:layout_marginStart="16dp" />
+    <TextView
+        android:id="@+id/participante_detalhes_fragment_header_tv"
+        app:layout_constraintStart_toEndOf="@id/participante_detalhes_fragment_fechar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+
+        android:textSize="28sp"
+        android:layout_marginStart="16dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/participante_detalhes_fragment_header_tv"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/participante_detalhes_fragment_nome"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#90d3d3d3"
+            android:textSize="18sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/participante_detalhes_fragment_checkin"
+            app:layout_constraintTop_toBottomOf="@id/participante_detalhes_fragment_nome"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#90d3d3d3"
+            android:textSize="18sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/participante_detalhes_fragment_email"
+            app:layout_constraintTop_toBottomOf="@id/participante_detalhes_fragment_checkin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#90d3d3d3"
+            android:textSize="18sp"
+            android:text=""/>
+        <TextView
+            android:id="@+id/participante_detalhes_fragment_data"
+            app:layout_constraintTop_toBottomOf="@id/participante_detalhes_fragment_email"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#90d3d3d3"
+            android:textSize="18sp"
+            android:text=""/>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
